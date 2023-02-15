@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'CraftworkGrotesk';
+  src: local('Craft work Grotesk'), local('Craft-work-Grotesk'),
+      url('./grotesk-semibold.woff2') format('woff2'),
+      url('./grotesk-semibold.woff') format('woff'),
+      url('./grotesk-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CraftworkSans';
+  src: local('Craft work Sans'), local('Craft-work-Sans'),
+      url('./sans-regular.woff2') format('woff2'),
+      url('./sans-regular.woff') format('woff'),
+      url('./sans-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

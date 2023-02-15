@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  /* gap: 8rem; */
+}
+
+.container span {
+  color: var(--c-white);
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: var(--fs-cm);
+  display: inline;
+}
+.container img {
+  width: 157rem;
+  height: 20rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 22rem
+  }
+}

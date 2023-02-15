@@ -1,0 +1,41 @@
+@keyframes glow {
+  from {
+    box-shadow: 0rem 0rem 500rem 90rem rgba(252, 238, 10, 1);
+  }
+  to {
+    box-shadow: 0rem 0rem 500rem 60rem rgba(252, 238, 10, 1);
+  }
+}
+
+@keyframes glow-mobile {
+  from {
+    box-shadow: 0rem 0rem 221rem 64rem rgba(252, 238, 10, 0.99);
+  }
+  to {
+    box-shadow: 0rem 0rem 221rem 40rem rgba(252, 238, 10, 1);
+  }
+}
+
+.glow {
+  position: absolute;
+  top: 397rem;
+  left: 257rem;
+  z-index: 0;
+  width: 895rem;
+  height: 0;
+  border-radius: 50%;
+  background-color: var(--c-primary);
+  box-shadow: 0rem 0rem 500rem 90rem rgba(252, 238, 10, 0.99);
+  animation: glow 3s infinite alternate ease-in;
+}
+
+@media screen and (max-width: 480px) {
+  .glow {
+    top: 270rem;
+    left: 57rem;
+    width: 300rem;
+    height: 0rem;
+    box-shadow: 0rem 0rem 221rem 64rem rgba(252, 238, 10, 0.99);
+    animation: glow-mobile 3s infinite alternate ease-in;
+  }
+}

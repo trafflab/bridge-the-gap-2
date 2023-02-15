@@ -1,0 +1,13 @@
+.bubble {
+  position: absolute;
+  top: 300rem;
+  left: 300rem;
+  z-index: 0;
+  width: 100rem;
+  height: 100rem;
+  border-radius: 50%;
+  background-color: var(--c-secondary);
+  transition: all linear 0.5s;
+  background-color: transparent;
+  z-index: 4;
+}

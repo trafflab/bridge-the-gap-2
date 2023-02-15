@@ -1,0 +1,151 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 44rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110rem;
+  position: relative;
+}
+
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.logo {
+  display: none;
+}
+
+.navList {
+  display: grid;
+  gap: 32rem;
+  grid-auto-flow: column;
+}
+
+.link {
+  font-size: var(--fs-cb);
+  font-family: var(--ff-primary);
+  color: var(--c-white);
+  font-weight: 600;
+  transition: 0.3s ease-out all;
+}
+
+.link:hover {
+  color: var(--c-secondary);
+}
+
+.buttonsContainer {
+  display: grid;
+  gap: 20rem;
+  grid-auto-flow: column;
+  align-items: center;
+}
+
+.burgerConatiner {
+  display: none;
+}
+
+.chengeLangButtonContainer {
+  justify-self: end;
+}
+
+.regButton {
+  width: 256rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2rem solid var(--c-primary);
+  border-radius: 8rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.regButton:hover {
+  cursor: pointer;
+}
+
+.regButton div[id=glow-animation] {
+  width: 0.5px;
+  height: 0.5px;
+  transition: ease 0.4s all;
+  background-color: transparent;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+}
+
+.regButton:hover div[id=glow-animation] {
+  background-color: var(--c-primary);
+  box-shadow: 0 0 50rem 180rem rgba(85, 0, 255, 1);
+
+}
+
+.regButton span {
+  font-size: var(--fs-cb);
+  font-family: var(--ff-primary);
+  color: var(--c-white);
+  font-weight: 600;
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 10rem 0 10rem;
+  }
+
+  .headerContent {
+    width: 394rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .logo {
+    display: block;
+    width: 155rem;
+    height: 30rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burgerConatiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chengeLangButtonContainer {
+    display: none;
+  }
+
+  .regButton {
+    width: 166rem;
+    height: 30rem;
+  }
+
+  .regButton span {
+    font-size: var(--fs-cm);
+  }
+  
+  
+}

@@ -1,0 +1,40 @@
+.icon {
+  background-color: var(--c-dark);
+  border-radius: 50%;
+  width: 36rem;
+  height: 36rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.icon img {
+  width: 24rem;
+  height: 24rem;
+}
+
+.icon div[id=glow] {
+  position: absolute;
+  z-index: 1;
+  width: 0.5rem;
+  height: 0.5rem;
+  
+  transition: all ease-out 0.3s;
+}
+
+
+@media screen and (max-width: 480px) {
+  .icon {
+    width: 24rem;
+    height: 24rem;
+  }
+  
+  .icon img {
+    width: 16rem;
+    height: 16rem;
+  }
+}

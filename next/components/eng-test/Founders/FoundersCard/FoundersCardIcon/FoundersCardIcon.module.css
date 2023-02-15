@@ -1,0 +1,54 @@
+.iconContainer {
+  background-color: var(--c-dark);
+  border-radius: 50%;
+  width: 32rem;
+  height: 32rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 16rem;
+  height: 16rem;
+  z-index: 2;
+}
+
+.link div {
+  position: absolute;
+  z-index: 1;
+  width: 0.5rem;
+  height: 0.5rem;
+  
+  transition: all ease-out 0.3s;
+}
+
+.link:hover div {
+  box-shadow: 7rem 6rem 19rem 8rem var(--c-secondary);
+}
+
+@media screen and (max-width: 480px) {
+  .iconContainer {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  .icon {
+    width: 12rem;
+    height: 12rem;
+  }
+}

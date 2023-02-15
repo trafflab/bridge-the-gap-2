@@ -1,0 +1,47 @@
+.card {
+  max-width: 400rem;
+  display: grid;
+  column-gap: 32rem;
+  grid-auto-flow: column;
+  justify-content: start;
+}
+
+.iconContainer {
+  background-color: var(--c-dark);
+  border-radius: 50%;
+  width: 64rem;
+  height: 64rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.icon {
+  width: 32rem;
+  height: 32rem;
+  z-index: 2;
+}
+
+.iconContainer div {
+  position: absolute;
+  z-index: 1;
+  width: 0.5rem;
+  height: 0.5rem;
+  
+  transition: all ease-out 0.3s;
+}
+
+.iconContainer div {
+  box-shadow: 7rem 6rem 19rem 8rem var(--c-secondary);
+}
+
+.text {
+  color: var(--c-white);
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: var(--fs-bb);
+}

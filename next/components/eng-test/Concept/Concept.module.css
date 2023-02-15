@@ -1,0 +1,168 @@
+.concept {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 200rem;
+}
+
+.title {
+  color: var(--c-white);
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: var(--fs-hm);
+  margin-bottom: 20rem;
+}
+
+.subtitle {
+  color: var(--c-gray);
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: var(--fs-bs);
+  margin-bottom: 100rem;
+  width: 590rem;
+  text-align: center;
+}
+
+.articlesList {
+  display: grid;
+  gap: 10rem;
+  width: 100%;
+}
+
+.articlesList li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articlesList li:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.modelContainer {
+  width: 377rem;
+  height: 377rem;
+  position: relative;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  width: 475rem;
+}
+
+.image {
+  width: 377rem;
+  height: 377rem;
+  position: relative;
+}
+
+.image[id=blomb] {
+  width: 306rem;
+  height: 306rem;
+  margin-right: 134rem;
+}
+
+.image[id=flower] {
+
+}
+
+.image[id=cross] {
+  width: 462rem;
+  height: 285rem;
+
+}
+
+.tag {
+  color: var(--c-secondary);
+  font-family: var(--ff-primary);
+  font-weight: 400;
+  font-size: var(--fs-bm);
+  margin-bottom: 5rem;
+}
+
+.articleTitle {
+  color: var(--c-white);
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: var(--fs-hs);
+  margin-bottom: 10rem;
+}
+
+.articleText {
+  color: var(--c-gray);
+  font-family: var(--ff-secondary);
+  font-weight: 400;
+  font-size: var(--fs-bm);
+}
+
+
+@media screen and (max-width: 480px) {
+  .concept {
+    padding-bottom: 110rem;
+  }
+
+  .title {
+    font-size: var(--fs-hs);
+    margin-bottom: 27rem;
+  }
+
+  .subtitle {
+    font-size: var(--fs-cm);
+    margin-bottom: 27rem;
+    width: 100%;
+  }
+
+  .articlesList {
+    gap: 30rem;
+  }
+
+  .articlesList li {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .articlesList li:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .modelContainer {
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .article {
+    width: 100%;
+  }
+
+  .image {
+    width: 80rem;
+    height: 80rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .image[id=blomb] {
+    width: 80rem;
+    height: 80rem;
+    margin-right: 0;
+  }
+  
+  .image[id=flower] {
+  
+  }
+  
+  .image[id=cross] {
+    width: 80rem;
+    height: 80rem;
+    margin-right: 0;
+  
+  }
+
+}

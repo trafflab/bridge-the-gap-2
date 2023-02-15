@@ -1,0 +1,83 @@
+.contactsList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 60rem;
+  border-top: 1rem solid var(--c-mazarine);
+
+}
+
+.contactsList li {
+  background-color: var(--c-dark);
+  border-radius: 50%;
+  width: 64rem;
+  height: 64rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 32rem;
+  height: 32rem;
+  z-index: 2;
+}
+
+.icon[id=iconYT] {
+  height: 22.5rem;
+}
+
+.icon[id=iconTW] {
+  height: 26rem;
+}
+
+.link div {
+  position: absolute;
+  z-index: 1;
+  width: 0.5rem;
+  height: 0.5rem;
+  
+  transition: all ease-out 0.3s;
+}
+
+.link:hover div {
+  box-shadow: 7rem 6rem 19rem 8rem var(--c-secondary);
+}
+
+@media screen and (max-width: 480px) {
+  .contactsList {
+    padding-top: 32rem;
+  }
+  
+  .contactsList li {
+    width: 48rem;
+    height: 48rem;
+  }
+  
+  .icon {
+    width: 24rem;
+    height: 24rem;
+    z-index: 2;
+  }
+  
+  .icon[id=iconYT] {
+    height: 17rem;
+  }
+  
+  .icon[id=iconTW] {
+    height: 20rem;
+  }
+}

@@ -1,0 +1,44 @@
+.bar {
+
+}
+
+.button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langIcon {
+  width: 30rem;
+  height: auto;
+  transition: all 0.3s ease-out;
+}
+.langIcon:hover {
+  cursor: pointer;
+  box-shadow: 0 0 8rem 1rem rgba(255, 255, 255, 0.3);
+}
+
+.lang {
+  font-size: var(--fs-bs);
+  font-family: var(--ff-primary);
+  color: var(--c-white);
+  font-weight: 600;
+  transition: 0.3s ease-out all;
+
+}
+
+
+.ru:hover {
+  color: #11FF33;
+  cursor: pointer;
+}
+
+.eng:hover {
+  color: #FCEE0A;
+  cursor: pointer;
+
+}

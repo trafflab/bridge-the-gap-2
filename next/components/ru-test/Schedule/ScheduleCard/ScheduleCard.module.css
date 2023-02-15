@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+.card {
+  display: grid;
+  gap: 285rem;
+  grid-auto-flow: column;
+}
+
+.time {
+  color: var(--c-neutral);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: var(--fs-hb);
+  width: 300rem;
+  overflow-wrap: anywhere;
+}
+
+.about {
+
+}
+
+.topic {
+  color: var(--c-neutral);
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: var(--fs-hs);
+  margin-bottom: 20rem;
+  /* overflow-wrap: break-word!; */
+  overflow-wrap: anywhere;
+
+}
+
+.speakerContainer {
+  display: grid;
+  gap: 31rem;
+  grid-auto-flow: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.speakerContainer:hover div[id=glow] {
+  cursor: pointer;
+  box-shadow: 5.5rem 6rem 12.5rem 3rem  var(--c-secondary);
+}
+
+.name {
+  color: var(--c-white);
+  font-family: var(--ff-primary);
+  font-weight: 600;
+  font-size: var(--fs-hs);
+}
+
+
+@media screen and (max-width: 480px) {
+  .card {
+    gap: 35rem;
+    align-items: center;
+    
+  }
+  
+  .time {
+    font-size: 30rem;
+    width: 115rem;
+  }
+
+  .topic {
+    font-size: var(--fs-cb);
+    margin-bottom: 14rem;
+  }
+
+  .speakerContainer {
+    gap: 20rem;
+  }
+
+  .name {
+    color: var(--c-white);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+    font-size: var(--fs-cb);
+  }
+
+}

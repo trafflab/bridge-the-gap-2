@@ -1,0 +1,17 @@
+.logo {
+  height: 40rem;
+  transition: all 0.4s ease;
+  width: 0rem;
+  margin-right: 0rem;
+}
+
+.isShown {
+  width: 207rem;
+  margin-right: 50rem;
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+}
