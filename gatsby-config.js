@@ -13,9 +13,9 @@ module.exports = {
     "gatsby-plugin-sitemap",
     {
     resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/icon.png"
-    }
+    // options: {
+    //   "icon": "src/images/icon.png"
+    // }
   }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -24,17 +24,17 @@ module.exports = {
     },
     __key: "images"
   },
-  // {
-  //   resolve: `gatsby-plugin-google-gtag`,
-  //   options: {
-  //     trackingIds: [
-  //       "G-ZW62X7F53H",
-  //     ],
-  //     pluginConfig: {
-  //       head: true,
-  //       respectDNT: false,
-  //     },
-  //   },
-  // },
+  {
+    resolve: `gatsby-plugin-google-gtag`,
+    options: {
+      trackingIds: [
+        "G-ZW62X7F53H",
+      ],
+      pluginConfig: {
+        head: true,
+        respectDNT: false,
+      },
+    },
+  },
 ]
 };

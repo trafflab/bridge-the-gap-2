@@ -27,7 +27,7 @@ export default function BurgerButton() {
           <section className={styles.modal}>
             <div className={styles.logoContainer}>
               <img className={styles.logo} src={logoImg} alt="site logo" />
-              <ChangeLangButton currentLang='eng' linkTo="/ru" />
+              <ChangeLangButton currentLang='ru' linkTo='/ru' />
             </div>
             <nav className={styles.nav}>
               <ul className={styles.navList}>
