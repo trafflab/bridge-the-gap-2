@@ -39,14 +39,14 @@ const speakersData = [
     link: 'https://t.me/mypbn',
     type: 'ru',
   },
-  {
-    photo: img3,
-    name: 'Mads Singers',
-    specialization: 'Owner Mads Singers Management Consulting',
-    linkType: facebookIcon,
-    link: 'https://www.facebook.com/MadsSingers',
-    type: 'eng',
-  },
+  // {
+  //   photo: img3,
+  //   name: 'Mads Singers',
+  //   specialization: 'Owner Mads Singers Management Consulting',
+  //   linkType: facebookIcon,
+  //   link: 'https://www.facebook.com/MadsSingers',
+  //   type: 'eng',
+  // },
   {
     photo: img4,
     name: 'Саша Уснул',
@@ -63,14 +63,14 @@ const speakersData = [
     link: 'https://www.linkedin.com/in/miromind/',
     type: 'ru',
   },
-  {
-    photo: img6,
-    name: 'Craig Campbell',
-    specialization: 'Affiliate Marketer',
-    linkType: facebookIcon,
-    link: 'https://www.facebook.com/craigcampbellseo03/',
-    type: 'eng',
-  },
+  // {
+  //   photo: img6,
+  //   name: 'Craig Campbell',
+  //   specialization: 'Affiliate Marketer',
+  //   linkType: facebookIcon,
+  //   link: 'https://www.facebook.com/craigcampbellseo03/',
+  //   type: 'eng',
+  // },
   {
     photo: img7,
     name: 'Максим Хлебников',
@@ -79,14 +79,14 @@ const speakersData = [
     link: 'https://www.instagram.com/permvillain/',
     type: 'ru',
   },
-  {
-    photo: img8,
-    name: 'Kasra Dash',
-    specialization: 'Agency Owner',
-    linkType: webIcon,
-    link: 'Searcharoo.com',
-    type: 'eng',
-  },
+  // {
+  //   photo: img8,
+  //   name: 'Kasra Dash',
+  //   specialization: 'Agency Owner',
+  //   linkType: webIcon,
+  //   link: 'Searcharoo.com',
+  //   type: 'eng',
+  // },
   {
     photo: img9,
     name: 'Cosmin',
@@ -103,7 +103,6 @@ const speakersData = [
     link: 'https://www.linkedin.com/',
     type: 'eng',
   },
-
 ]
 export default function Speakers() {
   return (

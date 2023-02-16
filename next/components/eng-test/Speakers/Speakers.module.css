@@ -34,6 +34,11 @@
   gap: 48rem;
   width: 100%;
 }
+/* 
+.list {
+  display: grid;
+  align-items: ;
+} */
 
 @media screen and (max-width: 480px) {
   .speakers {

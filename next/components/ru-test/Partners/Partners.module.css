@@ -14,24 +14,67 @@
   margin-bottom: 60rem;
 }
 
-.img {
-  width: 202rem;
-  height: 100rem;
+.list {
+  margin-bottom: 60rem;
+  /* display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20rem;
+  justify-items: space-between;
+   */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+
+.list li[id=partners-pirate] img {
+  width: 324rem;
+  height: 101rem;
+  margin-bottom: 60rem;
+}
+
+.list li[id=partners-cpagram] img {
+  width: 325rem;
+  height: 104rem;
+  margin-bottom: 60rem;
+}
+
+.list li[id=partners-protraffic] img {
+  width: 297rem;
+  height: 80rem;
+  margin-bottom: 60rem;
+}
+
+.list li[id=partners-mafia] img {
+  width: 364rem;
+  height: 66rem;
+}
+
+.list li[id=partners-cbc] img {
+  width: 174rem;
+  height: 87rem;
+}
+
+.list li[id=partners-pbn] img {
+  width: 297rem;
+  height: 68rem;
 }
 
 .img:hover {
   cursor: pointer;
 }
 
-.list {
-  margin-bottom: 60rem;
-}
-
 .line {
   width: 100%;
   height: 1rem;
-  background-color: var(--c-secondary);
-  box-shadow: 0rem 0rem 16rem 2rem var(--c-secondary);
+  background-color: #11FF33;
+  box-shadow: 0rem 0rem 16rem 2rem #11FF33;
 }
 
 @media screen and (max-width: 480px) {
@@ -49,9 +92,83 @@
 
     margin-bottom: 50rem;
   }
-  
+
   .list {
     margin-bottom: 50rem;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'pirate cpagram'
+    'protraffic pbn'
+    'mafia cbc';
+    row-gap: 30rem;
   }
+  
+  
+  
+  .list li[id=partners-pirate] img {
+    width: 162rem;
+    height: 50rem;
+    margin-bottom: 0rem;
+  }
+
+  .list li[id=partners-pirate] {
+    grid-area: pirate;
+  }
+  
+  .list li[id=partners-cpagram] img {
+    width: 162rem;
+    height: 52rem;
+    margin-bottom: 0rem;
+  }
+
+  .list li[id=partners-cpagram] {
+    grid-area: cpagram;
+  }
+  
+  .list li[id=partners-protraffic] img {
+    width: 148rem;
+    height: 40rem;
+    margin-bottom: 0rem;
+
+
+  }
+  .list li[id=partners-protraffic] {
+    grid-area: protraffic;
+  }
+
+  .list li[id=partners-pbn] img {
+    width: 148rem;
+    height: 34rem;
+
+  }
+
+  .list li[id=partners-pbn] {
+    grid-area: pbn;
+    justify-self: end;
+  }
+
+  .list li[id=partners-mafia] img {
+    width: 181rem;
+    height: 33rem;
+  }
+
+  .list li[id=partners-mafia] {
+    grid-area: mafia;
+
+  }
+  
+  .list li[id=partners-cbc] img {
+    width: 87rem;
+    height: 43rem;
+    margin-left: 40rem;
+
+  }
+  .list li[id=partners-cbc] {
+    grid-area: cbc;
+    justify-self: center;
+  }
+
+
   
 }

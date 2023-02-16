@@ -40,10 +40,10 @@ export default function Form() {
       {
         isSend
           ? <div className={styles.messageContainer}>
-              <p className={styles.message}>A link to the broadcast and more information will be in your inbox in a couple of minutes!</p>
+              <p className={styles.message}>Ссылка на трансляцию и дополнительная информация через пару минут будут у вас на почте!</p>
             </div>
           : <div className={styles.formContainer}>
-              <h2 className={styles.title}>Take part</h2>
+              <h2 className={styles.title}>Принять участие</h2>
               <form onSubmit={handleSubmit} className={styles.form}>
                 <div className={styles.inputContainer}>
                   <img className={styles.icon} src={emailImg} alt="email icon" />
@@ -51,7 +51,7 @@ export default function Form() {
                     className={styles.input}
                     type="email"
                     name='email'
-                    placeholder='Email'
+                    placeholder='Почта'
                     value={values?.email}
                     onChange={handleChange}
                     required={true}
@@ -63,7 +63,7 @@ export default function Form() {
                     className={styles.input}
                     type="text"
                     name='tg'
-                    placeholder='Telegram'
+                    placeholder='Телеграм'
                     value={values?.tg}
                     onChange={handleChange}
                   />
@@ -74,7 +74,7 @@ export default function Form() {
                     className={styles.input}
                     type="text"
                     name='skype'
-                    placeholder='Skype'
+                    placeholder='Скайп'
                     value={values?.skype}
                     onChange={handleChange}
                   />
@@ -89,7 +89,7 @@ export default function Form() {
                   {
                     isLoading
                       ? <Loader />
-                      : <span>Sign up</span>
+                      : <span>Записаться</span>
                   } 
                 </button>
               </form>
