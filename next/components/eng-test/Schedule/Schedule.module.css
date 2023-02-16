@@ -22,7 +22,7 @@
 }
 
 .list li {
-  padding: 40rem 0 25rem;
+  padding: 32rem 0 32rem;
   border-bottom: 1rem solid var(--c-murky);
   width: 100%;
 }
@@ -49,6 +49,28 @@
 .list li:nth-child(7) div[id=icon] {
   background-color: black;
 }
+
+
+
+.list li:last-child {
+  background-color: var(--c-secondary);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.list li:last-child article {
+  width: 1110rem;
+}
+
+.list li:last-child p, .list li:last-child h4 {
+  color: black;
+}
+
+.list li:last-child div[id=icon] {
+  background-color: black;
+}
+
 
 @media screen and (max-width: 480px) {
   .schedule {

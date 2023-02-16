@@ -12,13 +12,14 @@ html {
   font-size: calc(1vw / 14.4);
   /* overflow-y: scroll !important; */
   scroll-behavior:smooth;
+  background-color: #202020;
 }
 
 body {
   max-width: 100vw;
   height: 100%;
   /* overflow-x: hidden; */
-  color: var(--c-black);
+  color: #202020;
 }
 
 a {
@@ -68,7 +69,7 @@ a {
   height: 100%;
   width: 100%;
 
-  background-color: var(--c-black);
+  background-color: #202020;
   /* overflow: hidden; */
 }
 

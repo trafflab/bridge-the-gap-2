@@ -11,12 +11,18 @@ import {
   Bubble,
   Founders,
   Header,
-  OpeningGlow
+  OpeningGlow,
+  Partners
 } from '../../next/components/ru-test'
 import favicon from '../../next/images/favicon.ico';
 import Helmet from "react-helmet";
+import { YMInitializer } from 'react-yandex-metrika';
 
 export default function HomeRu() {
+
+  React.useEffect(() => {
+    localStorage.setItem('lang', 'ru');
+  }, [])
 
   return (
     <>
@@ -42,6 +48,7 @@ export default function HomeRu() {
             <Concept />
             <ConceptFor />
             <Schedule />
+            <Partners />
             <Speakers />
             <Founders />
           </main>
@@ -51,6 +58,7 @@ export default function HomeRu() {
         </div>
         <OpeningGlow />
       </div>
+      <YMInitializer accounts={[92155774]} options={{webvisor: true}} version="2" />
     </>
   )
 }

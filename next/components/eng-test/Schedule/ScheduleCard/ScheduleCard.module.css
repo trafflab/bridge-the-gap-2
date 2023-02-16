@@ -15,7 +15,9 @@
 }
 
 .about {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .topic {
@@ -23,7 +25,7 @@
   font-family: var(--ff-primary);
   font-weight: 600;
   font-size: var(--fs-hs);
-  margin-bottom: 20rem;
+  margin-bottom: 32rem;
   /* overflow-wrap: break-word!; */
   overflow-wrap: anywhere;
 

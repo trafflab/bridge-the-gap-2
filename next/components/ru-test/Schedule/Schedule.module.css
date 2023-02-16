@@ -22,7 +22,7 @@
 }
 
 .list li {
-  padding: 40rem 0 25rem;
+  padding: 32rem 0 32rem;
   border-bottom: 1rem solid var(--c-murky);
   width: 100%;
 }
@@ -38,7 +38,18 @@
   justify-content: center;
 }
 
+.list li:last-child {
+  background-color: var(--c-primary);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 .list li:nth-child(7) article {
+  width: 1110rem;
+}
+
+.list li:last-child article {
   width: 1110rem;
 }
 

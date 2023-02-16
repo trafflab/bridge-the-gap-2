@@ -47,9 +47,24 @@
     width: 100%;
   }
   
-  .list {
+  /* .list {
     grid-template-columns: 1fr;
     gap: 30rem;
     width: 100%;
+  } */
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+  }
+
+  .list li {
+    margin-bottom: 30rem;
+  }
+  .list li:last-child {
+    margin-bottom: 0;
   }
 }

@@ -9,7 +9,7 @@ import Speakers from "./Speakers/Speakers";
 import Founders from "./Founders/Founders";
 import Bubble from "./Bubble/Bubble";
 import OpeningGlow from "./OpeningGlow/OpeningGlow";
-
+import Partners from './Partners/Partners';
 import Footer from "./Footer/Footer";
 
 export {
@@ -24,4 +24,5 @@ export {
   Bubble,
   OpeningGlow,
   Footer,
+  Partners,
 }

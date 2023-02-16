@@ -4,7 +4,7 @@ import * as styles from './Bubble.module.css';
   const paths = [
     {
       // 0
-      top: 444,
+      top: 581, //444 143
       left: 626,
       width: 200,
       height: 0,
@@ -15,7 +15,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       // 1
-      top: 444,
+      top: 724,
       left: 701,
       width: 57,
       height: 5,
@@ -26,7 +26,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       // 2
-      top: 737,
+      top: 880,
       left: 482,
       width: 70,
       height: 70,
@@ -37,7 +37,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       // 3
-      top: 815,
+      top: 958,
       left: 159,
       width: 80,
       height: 80,
@@ -48,7 +48,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       // 4
-      top: 1207,
+      top: 1350,
       left: 620,
       width: 176,
       height: 80,
@@ -59,7 +59,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       //5
-      top: 1643,
+      top: 1786,
       left: 130,
       width: 276,
       height: 216,
@@ -70,7 +70,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       //6
-      top: 1878,
+      top: 2021,
       left: 769,
       width: 50,
       height: 50,
@@ -81,7 +81,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       //7
-      top: 2376,
+      top: 2519,
       left: 109,
       width: 200,
       height: 200,
@@ -92,7 +92,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       //8
-      top: 2863,
+      top: 3006,
       left: 985,
       width: 51,
       height: 51,
@@ -103,7 +103,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       //9
-      top: 3331,
+      top: 3474,
       left: 638,
       width: 150,
       height: 27,
@@ -114,7 +114,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       //10
-      top: 3638,
+      top: 3781,
       left: 134,
       width: 1150,
       height: 10,
@@ -125,7 +125,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       //11
-      top: 6622,
+      top: 6765,
       left: 134,
       width: 1150,
       height: 10,
@@ -136,7 +136,7 @@ import * as styles from './Bubble.module.css';
     },
     {
       //12
-      top: 7522,
+      top: 7665,
       left: 621,
       width: 197,
       height: 50,

@@ -11,14 +11,18 @@ import {
   Bubble,
   Founders,
   Header,
-  OpeningGlow
+  OpeningGlow,
+  Partners
+  
 } from '../../next/components/eng-test'
 import favicon from '../../next/images/favicon.ico';
 import Helmet from "react-helmet";
 import { YMInitializer } from 'react-yandex-metrika';
 
 export default function HomeEng() {
-
+  React.useEffect(() => {
+    localStorage.setItem('lang', 'en');
+  },[])
   return (
     <>
       <Helmet>
@@ -42,6 +46,7 @@ export default function HomeEng() {
             <Concept />
             <ConceptFor />
             <Schedule />
+            <Partners />
             <Speakers />
             <Founders />
           </main>

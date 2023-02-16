@@ -71,6 +71,18 @@ const scheduleList = [
   },
   {
     time: '18:30-19:00',
+    topic: 'How to achieve expolosive growth in the first years of your affiliate igaming business in the most concurrential GEOs',
+    speaker: 'Cosmin',
+    link: '#linkTo',
+  },
+  {
+    time: '19:00-19:30',
+    topic: 'How I Scaled to above 6 figures on a shoestring budget',
+    speaker: 'Brent Jacobs',
+    link: '#linkTo',
+  },
+  {
+    time: '19:30-20:00',
     topic: 'Conclusion & final thoughts',
     speaker: 'Team',
     link: '#linkTo',

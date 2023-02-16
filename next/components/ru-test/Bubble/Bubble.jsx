@@ -4,7 +4,7 @@ import * as styles from './Bubble.module.css';
 const paths = [
   {
     // 0
-    top: 444,
+    top: 581, 
     left: 626,
     width: 200,
     height: 0,
@@ -15,7 +15,7 @@ const paths = [
   },
   {
     // 1
-    top: 444,
+    top: 581,
     left: 701,
     width: 57,
     height: 5,
@@ -26,7 +26,7 @@ const paths = [
   },
   {
     // 2
-    top: 737,
+    top: 880,
     left: 482,
     width: 70,
     height: 70,
@@ -37,7 +37,7 @@ const paths = [
   },
   {
     // 3
-    top: 815,
+    top: 958,
     left: 159,
     width: 80,
     height: 80,
@@ -48,7 +48,7 @@ const paths = [
   },
   {
     // 4
-    top: 1207,
+    top: 1350,
     left: 620,
     width: 176,
     height: 80,
@@ -59,7 +59,7 @@ const paths = [
   },
   {
     //5
-    top: 1643,
+    top: 1786,
     left: 130,
     width: 276,
     height: 216,
@@ -70,7 +70,7 @@ const paths = [
   },
   {
     //6
-    top: 1878,
+    top: 2021,
     left: 769,
     width: 50,
     height: 50,
@@ -81,7 +81,7 @@ const paths = [
   },
   {
     //7
-    top: 2376,
+    top: 1519,
     left: 109,
     width: 200,
     height: 200,
@@ -92,7 +92,7 @@ const paths = [
   },
   {
     //8
-    top: 2863,
+    top: 3006,
     left: 985,
     width: 51,
     height: 51,
@@ -103,7 +103,7 @@ const paths = [
   },
   {
     //9
-    top: 3431,
+    top: 3574,
     left: 638,
     width: 150,
     height: 27,
@@ -114,7 +114,7 @@ const paths = [
   },
   {
     //10
-    top: 3738,
+    top: 3881,
     left: 134,
     width: 1150,
     height: 10,
@@ -125,7 +125,7 @@ const paths = [
   },
   {
     //11
-    top: 6500,
+    top: 6643,
     left: 134,
     width: 1150,
     height: 10,
@@ -136,7 +136,7 @@ const paths = [
   },
   {
     //12
-    top: 7522,
+    top: 7665,
     left: 621,
     width: 197,
     height: 50,
