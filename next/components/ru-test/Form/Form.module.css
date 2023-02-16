@@ -44,7 +44,7 @@
   font-family: var(--ff-primary);
   font-weight: 600;
   font-size: var(--fs-bm);
-
+  text-align: center;
 }
 
 
@@ -160,5 +160,11 @@
     gap: 30rem;
     grid-auto-flow: row;
   }
-  
+
+  .messageContainer {
+    width: 100%;
+    padding: 24rem 16rem;
+    height: auto;
+  }
+
 }

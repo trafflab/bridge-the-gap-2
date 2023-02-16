@@ -14,6 +14,15 @@
   margin-bottom: 60rem;
 }
 
+.img {
+  width: 202rem;
+  height: 100rem;
+}
+
+.img:hover {
+  cursor: pointer;
+}
+
 .list {
   margin-bottom: 60rem;
 }
@@ -39,11 +48,6 @@
 
 
     margin-bottom: 50rem;
-  }
-
-  .img {
-    width: 202rem;
-    height: 100rem;
   }
   
   .list {

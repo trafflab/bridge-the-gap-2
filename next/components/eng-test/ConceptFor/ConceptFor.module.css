@@ -6,7 +6,7 @@
 }
 
 .title {
-  color: var(--c-gray);
+  color: var(--c-white);
   font-family: var(--ff-primary);
   font-weight: 600;
   font-size: var(--fs-hb);

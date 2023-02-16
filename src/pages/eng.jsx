@@ -21,7 +21,7 @@ import { YMInitializer } from 'react-yandex-metrika';
 
 export default function HomeEng() {
   React.useEffect(() => {
-    localStorage.setItem('lang', 'en');
+    localStorage.setItem('lang', 'eng');
   },[])
   return (
     <>

@@ -71,4 +71,7 @@
     width: 354rem;
   }
 
+  .list li:last-child article {
+    width: 354rem;
+  }
 }

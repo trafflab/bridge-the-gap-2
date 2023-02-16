@@ -7,7 +7,7 @@ import PageLoader from "../../next/components/ui/PageLoader";
 const getRedirectLanguage = () => {
 
   if (typeof navigator === `undefined`) {
-    return "en";
+    return "eng";
   }
 
   const lang = navigator && navigator.language && navigator.language.split("-")[0];
@@ -26,14 +26,18 @@ const getRedirectLanguage = () => {
 export default function IndexPage() {
 
   useEffect(() => {
+    // localStorage.clear();
     let urlLang
     let savedLang = localStorage.getItem('lang');
-
-    if (savedLang) urlLang = savedLang
+    if (savedLang) {
+      if (savedLang === 'en') {
+        urlLang = 'eng'
+      } else urlLang = savedLang
+      
+    } 
     else {
       urlLang = getRedirectLanguage();
       localStorage.setItem('lang', urlLang);
-      
     }
     
     navigate(`/${urlLang}`, {replace: true})
