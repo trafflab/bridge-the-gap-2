@@ -103,6 +103,22 @@ const speakersData = [
     link: 'https://www.linkedin.com/',
     type: 'eng',
   },
+  {
+    photo: img13,
+    name: 'Secret speaker',
+    specialization: '...',
+    linkType: false,
+    link: '',
+    type: 'eng',
+  },
+  {
+    photo: img13,
+    name: 'Secret speaker',
+    specialization: '...',
+    linkType: false,
+    link: '',
+    type: 'eng',
+  },
 ]
 export default function Speakers() {
   return (
