@@ -32,7 +32,7 @@ export default function BurgerButton() {
             <nav className={styles.nav}>
               <ul className={styles.navList}>
                 <li><a id='navLink' href='#concept' className={styles.link}>сoncept</a></li>
-                <li><a id='navLink' href='#schedule' className={styles.link}>shedule</a></li>
+                <li><a id='navLink' href='#schedule' className={styles.link}>schedule</a></li>
                 <li><a id='navLink' href='#speakers' className={styles.link}>speakers</a></li>
               </ul>
             </nav>

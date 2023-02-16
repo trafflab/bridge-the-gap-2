@@ -27,17 +27,16 @@ export default function IndexPage() {
 
   useEffect(() => {
     let urlLang
-    let savedLang = localStorage.getItem('lang')
-
-    savedLang = savedLang === 'ua' ? 'ru' : savedLang // del ue
+    let savedLang = localStorage.getItem('lang');
 
     if (savedLang) urlLang = savedLang
     else {
       urlLang = getRedirectLanguage();
       localStorage.setItem('lang', urlLang);
+      
     }
     
-    navigate(`/${urlLang}/`, {replace: true})
+    navigate(`/${urlLang}`, {replace: true})
 
   }, []);
 

@@ -28,7 +28,7 @@ export default function HomeRu() {
     <>
       <Helmet>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <link rel="icon" href={favicon} />
+        {/* <link rel="icon" href={favicon} /> */}
 
         <meta name="yandex-verification" content="c416b5e0522c5e6f" />
         <meta name="google-site-verification" content="nE11p0r3ETai6zzFlTcVft0AS6mSDcjwz7QbRFTitvY" />

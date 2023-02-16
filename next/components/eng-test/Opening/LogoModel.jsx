@@ -1,14 +1,13 @@
 import * as React from "react";
 
 import { useLoader, useFrame, Canvas } from "@react-three/fiber";
+
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Suspense } from "react";
-// import CanvasLoader from "@/components/ui/CanvasLoader/CanvasLoader";
-// import d3 from './logo-en.glb';
+import { useRef, Suspense } from "react";
 
 const Model = () => {
-  const ref = React.useRef()
-  const gltf = useLoader(GLTFLoader, d3);
+  const ref = useRef()
+  const gltf = useLoader(GLTFLoader, "/logo-en.glb");
   useFrame((state, delta) => (ref.current.rotation.y += 0.004));
   return (
     <>
@@ -30,7 +29,6 @@ export default function LogoModel() {
       <pointLight position={[-30, -30, -30]} />
       <Suspense>
         <Model />
-        {/* <OrbitControls /> */}
       </Suspense>
     </Canvas>
   );

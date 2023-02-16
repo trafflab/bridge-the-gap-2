@@ -22,7 +22,7 @@ export default function Header() {
             <HeaderLogo />
             <ul className={styles.navList}>
               <li><a href='#concept' className={styles.link}>concept</a></li>
-              <li><a href='#schedule' className={styles.link}>shedule</a></li>
+              <li><a href='#schedule' className={styles.link}>schedule</a></li>
               <li><a href='#speakers' className={styles.link}>speakers</a></li>
             </ul>
           </nav>

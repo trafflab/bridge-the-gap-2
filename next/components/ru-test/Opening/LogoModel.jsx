@@ -1,15 +1,13 @@
-'use client';
+import * as React from "react";
 
 import { useLoader, useFrame, Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useRef, useState, Suspense } from "react";
-import CanvasLoader from "@/components/ui/CanvasLoader/CanvasLoader";
+import { useRef, Suspense } from "react";
 
 const Model = () => {
   const ref = useRef()
-  const [hovered, hover] = useState(false);
-  const gltf = useLoader(GLTFLoader, "./img-ru/logo-3.glb");
+  const gltf = useLoader(GLTFLoader, "/logo-ru.glb");
   useFrame((state, delta) => (ref.current.rotation.y += 0.004));
   return (
     <>
@@ -17,8 +15,6 @@ const Model = () => {
       ref={ref}
       object={gltf.scene}
       scale={0.019}
-      onPointerOver={(event) => hover(true)}
-      onPointerOut={(event) => hover(false)}
       />
     </>
   );
@@ -33,7 +29,6 @@ export default function LogoModel() {
       <pointLight position={[-30, -30, -30]} />
       <Suspense>
         <Model />
-        {/* <OrbitControls /> */}
       </Suspense>
     </Canvas>
   );
