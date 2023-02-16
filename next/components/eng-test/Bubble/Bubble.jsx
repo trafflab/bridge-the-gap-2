@@ -332,15 +332,15 @@ export default function Bubble() {
 
   React.useEffect(() => {
     const docHeight = document.body.scrollHeight
-
+    console.log(docHeight);
     if (window.matchMedia('(max-width: 480px)').matches) {
-      const referenceMobile = 6736;
+      const referenceMobile = 8206;
       const ratioMobile = docHeight / referenceMobile
       setPath(pathsMobile)
       setCurrentOffsets(offsetsMobile.map(pos => pos * ratioMobile))
 
     } else {
-      const reference = 8241
+      const reference = 9637
       const ratio = docHeight / reference
       setPath(paths)
       setCurrentOffsets(offsets.map(pos => pos * ratio))
