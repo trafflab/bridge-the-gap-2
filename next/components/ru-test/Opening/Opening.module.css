@@ -33,6 +33,13 @@
   margin-bottom: 80rem;
 }
 
+.line { 
+  width: 100%;
+  height: 1rem;
+  background-color: #11FF33;
+  box-shadow: 0rem 0rem 16rem 2rem #11FF33;
+}
+
 
 @media screen and (max-width: 480px) {
   .opening {

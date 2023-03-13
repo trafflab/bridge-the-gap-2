@@ -23,6 +23,10 @@ export default function HomeEng() {
   React.useEffect(() => {
     localStorage.setItem('lang', 'eng');
   },[])
+  
+  const pageRef = React.useRef();
+  const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
+  
   return (
     <>
       <Helmet>
@@ -36,6 +40,8 @@ export default function HomeEng() {
         <title>Bridge The Gap International Conference, bringing together experts and specialists in the niche of affiliate gambling</title>
         <meta name="description" content="We are a conference that gathers SEO specialists, experts on paid traffic channels, creative entrepreneurs in the niche of affiliate gambling, the best speakers and practitioners of the international level." />
 
+        {/* <meta property="og:title" content="Bridge The Gap International Conference, bringing together experts and specialists in the niche of affiliate gambling"/> */}
+
         <script>
           {`
             !function(f,b,e,v,n,t,s)
@@ -46,26 +52,26 @@ export default function HomeEng() {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '856864205282797');
-            fbq('track', 'PageView');          
+            fbq('init', '856281402109098');
+            fbq('track', 'PageView');
+
         `}
         </script>
         <noscript>
           {`
-          <img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=856864205282797&ev=PageView&noscript=1"
-          />
+            <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=856281402109098&ev=PageView&noscript=1"
+            />
           `}
         </noscript>
-
       </Helmet>
-    
+
       <div className={styles.base}>
-        <Header />
+        <Header scrollHandler={smoothScrollToHeader}/>
         <div className={styles.page}>
           <main className={styles.main}>
             <Opening />
-            <Form />
+            <Form refForm={pageRef}/>
             <Concept />
             <ConceptFor />
             <Schedule />

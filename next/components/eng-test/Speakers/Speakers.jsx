@@ -12,7 +12,12 @@ import img6 from '../../../images/speakers/6.jpg';
 import img7 from '../../../images/speakers/7.jpg';
 import img8 from '../../../images/speakers/8.jpg';
 import img9 from '../../../images/speakers/9.jpg';
+
 import img13 from '../../../images/speakers/13.jpg';
+import img14 from '../../../images/speakers/14.jpg';
+
+import img15 from '../../../images/speakers/15.jpg';
+import img16 from '../../../images/speakers/16.jpg';
 
 
 import tgIcon from '../../../images/icon/tg.svg'
@@ -32,30 +37,6 @@ const speakersData = [
     type: 'ru',
   },
   {
-    photo: img2,
-    name: 'Николай Кодий',
-    specialization: 'Автор и создатель канала PBN в телеграме',
-    linkType: tgIcon,
-    link: 'https://t.me/mypbn',
-    type: 'ru',
-  },
-  // {
-  //   photo: img3,
-  //   name: 'Mads Singers',
-  //   specialization: 'Owner Mads Singers Management Consulting',
-  //   linkType: facebookIcon,
-  //   link: 'https://www.facebook.com/MadsSingers',
-  //   type: 'eng',
-  // },
-  {
-    photo: img4,
-    name: 'Саша Уснул',
-    specialization: 'PR&Content CPA BRO',
-    linkType: tgIcon,
-    link: 'https://t.me/sashaneedhelp',
-    type: 'ru',
-  },
-  {
     photo: img5,
     name: 'Dmitriy',
     specialization: 'веб-мастер, SEO - специалист',
@@ -63,14 +44,6 @@ const speakersData = [
     link: 'https://www.linkedin.com/in/miromind/',
     type: 'ru',
   },
-  // {
-  //   photo: img6,
-  //   name: 'Craig Campbell',
-  //   specialization: 'Affiliate Marketer',
-  //   linkType: facebookIcon,
-  //   link: 'https://www.facebook.com/craigcampbellseo03/',
-  //   type: 'eng',
-  // },
   {
     photo: img7,
     name: 'Максим Хлебников',
@@ -79,14 +52,6 @@ const speakersData = [
     link: 'https://www.instagram.com/permvillain/',
     type: 'ru',
   },
-  // {
-  //   photo: img8,
-  //   name: 'Kasra Dash',
-  //   specialization: 'Agency Owner',
-  //   linkType: webIcon,
-  //   link: 'Searcharoo.com',
-  //   type: 'eng',
-  // },
   {
     photo: img9,
     name: 'Cosmin',
@@ -104,19 +69,19 @@ const speakersData = [
     type: 'eng',
   },
   {
-    photo: img13,
-    name: 'Secret speaker',
-    specialization: '...',
+    photo: img15,
+    name: 'Ерназар Торебаев',
+    specialization: 'Mobile TechLead, Android Developer',
     linkType: false,
     link: '',
-    type: 'eng',
+    type: 'ru',
   },
   {
-    photo: img13,
-    name: 'Secret speaker',
-    specialization: '...',
-    linkType: false,
-    link: '',
+    photo: img16,
+    name: 'Dmitry Romanov',
+    specialization: 'Head of sales Trafflab',
+    linkType: webIcon,
+    link: 'https://trafflab.com/en',
     type: 'eng',
   },
 ]

@@ -332,7 +332,7 @@ export default function Bubble() {
 
   React.useEffect(() => {
     const docHeight = document.body.scrollHeight
-    console.log(docHeight);
+    // console.log(docHeight);
     if (window.matchMedia('(max-width: 480px)').matches) {
       const referenceMobile = 8206;
       const ratioMobile = docHeight / referenceMobile

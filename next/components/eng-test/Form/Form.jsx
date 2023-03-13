@@ -9,8 +9,10 @@ import skypeImg from '../../../images/icon/skype.svg';
 import tgImg from '../../../images/icon/tg.svg';
 import emailImg from '../../../images/icon/email.svg';
 
+import { useEffect } from "react";
 
-export default function Form() {
+export default function Form({refForm}) {
+
   const [ isActive, setIsActive ] = React.useState(false);
   const [ isSend, setIsSend ] = React.useState(false)
   const [ isLoading, setIsLoading ] = React.useState(false);
@@ -21,6 +23,7 @@ export default function Form() {
 
   const handleSubmit = (evt) => {
     evt.preventDefault()
+    console.log(window)
     setIsLoading(true);
     const message = `email - ${values.email}, tg - ${values.tg || '---'}, skype - ${values.skype || '---'}`
     sendFormToTg(message)
@@ -35,8 +38,12 @@ export default function Form() {
       })
   }
 
+  // useEffect(() => {
+  //   console.log(window._fbq)
+  // })
+
   return (
-    <section id='form' className={styles.container}>
+    <section ref={refForm} id='form' className={styles.container}>
       {
         isSend
           ? <div className={styles.messageContainer}>
@@ -85,12 +92,13 @@ export default function Form() {
                   type='submit'
                   className={`${styles.sendButton} ${isValid ? styles.buttonIsActive : ''}`}
                 >
-                  <div id='glow-animation' />
-                  {
+                  Sign up
+                  {/* <div id='glow-animation' /> */}
+                  {/* {
                     isLoading
                       ? <Loader />
                       : <span>Sign up</span>
-                  } 
+                  }  */}
                 </button>
               </form>
             </div>

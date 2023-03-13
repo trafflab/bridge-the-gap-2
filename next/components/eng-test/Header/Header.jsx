@@ -11,7 +11,7 @@ import logoImg from '../../../images/eng-test/logo-footer.svg';
 import ChangeLangButton from "../../ui/ChangeLangButton/ChangeLangButton";
 import BurgerButton from './BurgerButton/BurgerButton';
 
-export default function Header() {
+export default function Header({scrollHandler}) {
   return (
     <header className={styles.header}>
       <HeaderBg />
@@ -35,10 +35,10 @@ export default function Header() {
           <div className={styles.chengeLangButtonContainer}>
             <ChangeLangButton currentLang='ru' linkTo='/ru' />
           </div>
-          <a href='#contacts' className={styles.regButton}>
+          <div onClick={scrollHandler} id='linktoregister' href='#contacts' className={styles.regButton}>
             <div id='glow-animation' />
-            <span>Sign up</span>
-          </a>
+            <span>To sign up</span>
+          </div>
         </div>
       </div>
     </header>

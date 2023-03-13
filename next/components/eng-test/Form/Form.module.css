@@ -74,13 +74,13 @@
   outline: none;
   border: none;
   width: 100%;
-  /* height: 80rem; */
+  height: 80rem;
 }
 
 
 .sendButton {
   width: 265rem;
-  height: 60rem;
+  height: 80rem;
   background-color: transparent;
   
   border: 2rem solid var(--c-mazarine);
@@ -88,9 +88,7 @@
   position: relative;
   overflow: hidden;
   transition: ease 0.4s all;
-}
 
-.sendButton span {
   font-family: var(--ff-primary);
   font-size: var(--fs-bm);
   font-weight: 600;
@@ -98,6 +96,15 @@
   position: relative;
   z-index: 2;
 }
+
+/* .sendButton span {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-bm);
+  font-weight: 600;
+  color: var(--c-white);
+  position: relative;
+  z-index: 2;
+} */
 
 .sendButton:hover {
   cursor: pointer;

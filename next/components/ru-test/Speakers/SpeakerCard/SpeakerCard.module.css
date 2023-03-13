@@ -14,13 +14,13 @@
   align-items: center;
 }
 
-.isRu {
+/* .isRu {
   box-shadow: 0 0 24rem -8rem rgba(17, 255, 51, 1);
 }
 
 .isEng {
   box-shadow: 0 0 24rem -8rem rgba(252, 238, 10, 1);
-}
+} */
 
 .selected {
   border: 2rem solid var(--c-primary);

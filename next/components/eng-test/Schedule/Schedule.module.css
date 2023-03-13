@@ -31,22 +31,22 @@
   border-top: 1rem solid var(--c-murky);
 }
 
-.list li:nth-child(7) {
+.list li:nth-child(6) {
   background-color: var(--c-secondary);
   width: 100vw;
   display: flex;
   justify-content: center;
 }
 
-.list li:nth-child(7) article {
+.list li:nth-child(6) article {
   width: 1110rem;
 }
 
-.list li:nth-child(7) p, .list li:nth-child(7) h4 {
+.list li:nth-child(6) p, .list li:nth-child(6) h4 {
   color: black;
 }
 
-.list li:nth-child(7) div[id=icon] {
+.list li:nth-child(6) div[id=icon] {
   background-color: black;
 }
 
@@ -86,7 +86,7 @@
     padding: 20rem 0 20rem;
   }
 
-  .list li:nth-child(7) article {
+  .list li:nth-child(6) article {
     width: 354rem;
   }
 

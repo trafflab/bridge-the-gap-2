@@ -35,7 +35,7 @@ export default function Header() {
           <div className={styles.chengeLangButtonContainer}>
             <ChangeLangButton currentLang='eng' linkTo='/eng' />
           </div>
-          <a href='#contacts' className={styles.regButton}>
+          <a id='linktoregister' href='#contacts' className={styles.regButton}>
             <div id='glow-animation' />
             <span>Зарегистрироваться</span>
           </a>

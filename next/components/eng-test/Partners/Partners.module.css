@@ -26,34 +26,63 @@
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   
 }
 
+.list li {
+  margin: 0rem 40rem;
+}
 
 
 .list li[id=partners-pirate] img {
-  width: 324rem;
-  height: 101rem;
+  width: 234rem;
+  height: 74rem;
   margin-bottom: 60rem;
 }
 
 .list li[id=partners-cpagram] img {
-  width: 325rem;
-  height: 104rem;
+  width: 231rem;
+  height: 74rem;
   margin-bottom: 60rem;
 }
 
 .list li[id=partners-protraffic] img {
-  width: 297rem;
-  height: 80rem;
+  width: 275rem;
+  height: 74rem;
   margin-bottom: 60rem;
+
+  /* margin-bottom: 60rem; */
 }
+
+
+
+.list li[id=partners-events] img {
+  width: 180rem;
+  height: 68rem;
+  margin-bottom: 60rem;
+
+}
+
+.list li[id=partners-killa] img {
+  width: 80rem;
+  height: 100rem;
+  margin-bottom: 60rem;
+
+}
+
+.list li[id=partners-pro] img {
+  width: 302rem;
+  height: 73rem;
+}
+
+
 
 .list li[id=partners-mafia] img {
   width: 364rem;
   height: 66rem;
+  margin-bottom: 60rem;
 }
 
 .list li[id=partners-cbc] img {
@@ -62,6 +91,11 @@
 }
 
 .list li[id=partners-pbn] img {
+  width: 327rem;
+  height: 58rem;
+}
+
+.list li[id=partners-fbcpa] img {
   width: 297rem;
   height: 68rem;
 }
@@ -106,18 +140,26 @@
     width: 100%;
     display: grid;
     grid-template-areas: 
-    'pirate cpagram'
-    'protraffic pbn'
-    'mafia cbc';
-    row-gap: 30rem;
+    'pirate pirate cpagram cpagram'
+    'protraffic protraffic events events'
+    'cbc mafia mafia mafia'
+    'killa pro pro pro'
+    'fbcpa fbcpa fbcpa fbcpa';
+    
+    gap: 25rem;
+    justify-items: center;
   }
   
-  
+  .list li {
+    margin: 0;
+  }
   
   .list li[id=partners-pirate] img {
     width: 162rem;
     height: 50rem;
     margin-bottom: 0rem;
+    justify-self: end;
+    align-self: end;
   }
 
   .list li[id=partners-pirate] {
@@ -145,36 +187,78 @@
     grid-area: protraffic;
   }
 
-  .list li[id=partners-pbn] img {
-    width: 148rem;
-    height: 34rem;
-
-  }
-
-  .list li[id=partners-pbn] {
-    grid-area: pbn;
-    justify-self: end;
-  }
 
   .list li[id=partners-mafia] img {
-    width: 181rem;
-    height: 33rem;
+    width: 215rem;
+    height: 40rem;
+    margin-bottom: 0;
   }
 
   .list li[id=partners-mafia] {
     grid-area: mafia;
-
+    justify-self: end;
+    align-self: end;
   }
   
   .list li[id=partners-cbc] img {
     width: 87rem;
     height: 43rem;
-    margin-left: 40rem;
+    /* margin-left: 40rem; */
 
   }
   .list li[id=partners-cbc] {
     grid-area: cbc;
-    justify-self: center;
+    /* justify-self: center; */
+  }
+
+
+  .list li[id=partners-events] img {
+    width: 135rem;
+    height: 50rem;
+    margin-bottom: 0rem;
+  
+  }
+
+  .list li[id=partners-events] {
+    grid-area: events;
+    justify-self: end;
+    align-self: end;
+
+  }
+  
+  .list li[id=partners-killa] img {
+    width: 53rem;
+    height: 66rem;
+    margin-bottom: 0;
+
+  }
+
+  .list li[id=partners-killa] {
+    grid-area: killa;
+    justify-self: start;
+    align-self: start;
+  }
+  
+  
+  .list li[id=partners-pro] img {
+    width: 208rem;
+    height: 50rem;
+  }
+
+  .list li[id=partners-pro] {
+    grid-area: pro;
+    justify-self: end;
+    align-self: end;
+  }
+
+  .list li[id=partners-fbcpa] img {
+    width: 235rem;
+    height: 42rem;
+  }
+
+  .list li[id=partners-fbcpa] {
+    grid-area: fbcpa;
+    justify-self: start;
   }
 
 
